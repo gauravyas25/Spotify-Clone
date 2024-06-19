@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Spotify.css">
+    <link rel="stylesheet" href="./logo.png">
+    <title>Spotify - Web Player: Music For Everyone</title>
+</head>
+<body>
+    <div class="main">
+        
+        <div class="sidebar">
+            <div class="navi">
+                <span id="nav-opt" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                    <br>
+                </span>
+
+                <span id="nav-opt">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </span>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div id="lib-opt">
+                        <img src="library_icon.png" alt="lib">
+                        <a href="#">Your Library</a>
+                        <br>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="lib-box">
+                    <p class="b-p1">Create your first Playlist</p>
+                    <p class="b-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create Playlist</button>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="main-content">
+            <div class="sticknav">
+                <div class="stickbaricons">
+                    <img src="backward_icon.png" alt="back" class="hide">
+                    <img src="forward_icon.png" alt="forward" class="hide">
+                </div>
+                <div class="stickbaropt">
+                    <button class="badge navitem hide">Explore Premium</button>
+                    <button class="badge navitem darkbadge hide"><i class="fa-solid fa-download" style="margin-right:10px ;"></i>Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            
+        
+            <h2>Recently Played</h2>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top 50 - Global</p>
+                        <p class="cardinfo">Your daily updated for most played tracks ...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Fast&Furious The first saga.png" id="card-img" alt="card1">
+                        <p class="cardtitle"> Fast & Furious</p>
+                        <p class="cardinfo"> The First Saga - Complete...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="liked.png" id="card-img" alt="card1">
+                        <p class="cardtitle">Liked Songs</p>
+                        <p class="cardinfo">14 songs</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <h2>Trending Now</h2>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="card1img.jpeg" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top 50 - Global</p>
+                        <p class="cardinfo">Your daily update of the most played tracks right now - Global.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="top50india.png" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top 50 - India</p>
+                        <p class="cardinfo">Your daily update of the most played tracks right now - India. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="topsongsindia.png" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top Songs - India</p>
+                        <p class="cardinfo">Your weekly update of the most played tracks right now - India. </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="card5img.jpeg" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top Songs - Global</p>
+                        <p class="cardinfo">Your weekly update of the most played tracks right now - Global.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="card6img.jpeg" id="card-img" alt="card1">
+                        <p class="cardtitle"> Top Songs - India</p>
+                        <p class="cardinfo">Your weekly update of the most played tracks right now - India.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Viral50global.png" id="card-img" alt="card1">
+                        <p class="cardtitle"> Viral 50 - Global</p>
+                        <p class="cardinfo">Your daily update of the most viral tracks right now - Global.</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="Viral50india.png" id="card-img" alt="card1">
+                        <p class="cardtitle"> Viral 50 - India</p>
+                        <p class="cardinfo">Your daily update of the most played tracks right now - India.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+    </div>
+
+    <div class="music-player">
+        <img src="album.jpeg" class="albumimg">
+        <div class="album">
+            <span class="albumtitle">Speed
+                <p class="albumcreator">Teriyaki Boyz</p>
+            </span>
+                
+        </div>
+        <div class="player">
+            <div class="playcontrol">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <img src="player_icon1.png" class="playercontrolicon iconplay1" alt="">
+                <img src="player_icon2.png" class="playercontrolicon iconplay2" alt="">
+                <img src="player_icon3.png" class="playercontrolicon iconplay3" style="height: 40px; opacity:1;" alt="">
+                <img src="player_icon4.png" class="playercontrolicon iconplay4" alt="">
+                <img src="player_icon5.png" class="playercontrolicon iconplay5" alt="">
+                <i class="fa-regular fa-thumbs-down"></i>
+            </div>
+            <div class="playbar">
+                <span class="curr">00:00</span>
+                <input type="range" min="0" max="100" step="1" class="progressbar">
+                <span class="total">4:15</span>
+            </div>
+        </div>
+        <div class="controls">
+                <img src="controlimg1.png" class="controlimg1" alt="">
+                <img src="controlimg2.png" class="controlimg2" alt="">
+                <img src="controlimg3.png" class="controlimg3" alt="">
+                <img src="controlimg4.png" class="controlimg4" alt="">
+                <img src="controlimg5.png" class="controlimg5" alt="">
+                <img src="controlimg6.png" class="controlimg6" alt="">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+        </div>
+       </div>
+
+</body>
+</html>
